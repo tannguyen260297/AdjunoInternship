@@ -5,14 +5,14 @@ namespace InternProject.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DAL_BLL_Layer.DAL.DBContext.PODBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DAL_Layer.DAL.DBContext.PODBContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(DAL_BLL_Layer.DAL.DBContext.PODBContext context)
+        protected override void Seed(DAL_Layer.DAL.DBContext.PODBContext context)
         {
             //  This method will be called after migrating to the latest version.
 

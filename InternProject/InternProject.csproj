@@ -176,6 +176,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PurchaseOrderController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -193,6 +194,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\PurchaseOrderManager\AddModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -250,6 +252,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\PurchaseOrder\Create.cshtml" />
+    <Content Include="Views\PurchaseOrder\Delete.cshtml" />
+    <Content Include="Views\PurchaseOrder\Details.cshtml" />
+    <Content Include="Views\PurchaseOrder\Edit.cshtml" />
+    <Content Include="Views\PurchaseOrder\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,9 +283,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL_BLL_Layer\DAL_BLL_Layer.csproj">
-      <Project>{021f9535-ac7b-493d-b424-573f79ea9e12}</Project>
-      <Name>DAL_BLL_Layer</Name>
+    <ProjectReference Include="..\BLL_Layer\BLL_Layer.csproj">
+      <Project>{846792d8-ea77-4913-bc9b-d64148322af4}</Project>
+      <Name>BLL_Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL_Layer\DAL_Layer.csproj">
+      <Project>{83a951f3-c694-472a-aac7-98a119b98e6e}</Project>
+      <Name>DAL_Layer</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
