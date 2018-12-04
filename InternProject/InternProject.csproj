@@ -173,20 +173,10 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="BLL\Implements\PurchaseOrderTool\PurchaseOrderRepository.cs" />
-    <Compile Include="BLL\Interface\PurchaseOrderTool\IPurchaseOrderRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\OrderModelsController.cs" />
-    <Compile Include="DAL\DBContext\PODBContext.cs" />
-    <Compile Include="DAL\Models\OrderTrack\OrderDetailModel.cs" />
-    <Compile Include="DAL\Models\OrderTrack\OrderModel.cs" />
-    <Compile Include="DAL\Models\OrderTrack\ProgressCheckModel.cs" />
-    <Compile Include="DAL\Models\ShipmentTrack\ArriveOfDespacthModel.cs" />
-    <Compile Include="DAL\Models\ShipmentTrack\BookingModel.cs" />
-    <Compile Include="DAL\Models\ShipmentTrack\CAModel.cs" />
-    <Compile Include="DAL\Models\ShipmentTrack\ManifestModel.cs" />
+    <Compile Include="Controllers\PurchaseOrderController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,16 +194,13 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\PurchaseOrderManager\AddModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Compile Include="DAL\Models\DeliveryTrack\DCBookingDetailModel.cs" />
-    <Compile Include="DAL\Models\DeliveryTrack\DCBookingModel.cs" />
-    <Compile Include="DAL\Models\DeliveryTrack\DCConfirmationDetailModel.cs" />
-    <Compile Include="DAL\Models\DeliveryTrack\DCConfirmationModel.cs" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -265,11 +252,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\OrderModels\Create.cshtml" />
-    <Content Include="Views\OrderModels\Delete.cshtml" />
-    <Content Include="Views\OrderModels\Details.cshtml" />
-    <Content Include="Views\OrderModels\Edit.cshtml" />
-    <Content Include="Views\OrderModels\Index.cshtml" />
+    <Content Include="Views\PurchaseOrder\Create.cshtml" />
+    <Content Include="Views\PurchaseOrder\Delete.cshtml" />
+    <Content Include="Views\PurchaseOrder\Details.cshtml" />
+    <Content Include="Views\PurchaseOrder\Edit.cshtml" />
+    <Content Include="Views\PurchaseOrder\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -294,6 +281,16 @@
     <EmbeddedResource Include="Migrations\201812040750012_ReviseModel1.resx">
       <DependentUpon>201812040750012_ReviseModel1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_Layer\BLL_Layer.csproj">
+      <Project>{846792d8-ea77-4913-bc9b-d64148322af4}</Project>
+      <Name>BLL_Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL_Layer\DAL_Layer.csproj">
+      <Project>{83a951f3-c694-472a-aac7-98a119b98e6e}</Project>
+      <Name>DAL_Layer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
