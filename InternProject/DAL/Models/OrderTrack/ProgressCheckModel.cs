@@ -11,13 +11,13 @@ namespace InternProject.DAL.Models.OrderTrack
     {
         [Key]
         [Required]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         //yes/no
-        public string Complete { get; set; }
+        public bool Complete { get; set; }
 
         //yes/no
-        public string onSchedule { get; set; }
+        public bool OnSchedule { get; set; }
 
         //calendar control
         public DateTime IntendedShipDate { get; set; }
@@ -29,11 +29,11 @@ namespace InternProject.DAL.Models.OrderTrack
         public DateTime InspectionDate { get; set; }
 
         //max string length
-        public string COMMENTS { get; set; }
+        public string Comments { get; set; }
 
         [Required]
-        [ForeignKey("OrderModel")]
-        public int OrderID { get; set; }
+        //[ForeignKey("OrderModel")]
+        public int OrderId { get; set; }
 
         public virtual OrderModel OrderModel { get; set; }
     }

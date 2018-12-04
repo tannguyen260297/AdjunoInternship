@@ -10,22 +10,23 @@ namespace InternProject.DAL.Models.ShipmentTrack
     public class ArriveOfDespacthModel
     {
         [Key]
-        public int ID { get; set; }
-        [ForeignKey("BookingModel")]
-        public int BookingID { get; set; }
+        public int Id { get; set; }
+
+        //[ForeignKey("BookingModel")]
+        public int BookingId { get; set; }
         public string Carrier { get; set; }
         public string Vessel { get; set; }
         public string Voyage { get; set; }
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime CTD { get; set; }
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime ETA { get; set; }
         public string OriginPort { get; set; }
         public string DestinationPort { get; set; }
         public string Mode { get; set; }
         public string Confirmed { get; set; }
 
-        public virtual BookingModel BookingModel { get; set; }
+        public virtual BookingModel Booking { get; set; }
 
     }
 }

@@ -26,20 +26,20 @@ namespace InternProject.DAL.Models.DeliveryTrack
         [StringLength(50)]
         public string Item { get; set; }
 
-        [ForeignKey("Order")]
+        //[ForeignKey("Order")]
         public int OrderId { get; set; }
 
         //[ForeignKey("ManifestModel")]
         public string Container { get; set; }
 
-        [ForeignKey("DCBookingModel")]
+        //[ForeignKey("DCBookingModel")]
         public int DCBookingId { get; set; }
 
         public virtual OrderModel Order { get; set; }
 
         //public virtual ManifestModel ManifestModel  { get; set; }
 
-        public virtual DCBookingModel DCBookingModel { get; set; }
+        public virtual DCBookingModel DCBooking { get; set; }
 
 
     }

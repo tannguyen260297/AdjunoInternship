@@ -10,13 +10,14 @@ namespace InternProject.DAL.Models.ShipmentTrack
     public class CAModel
     {
         [Key]
-        public int ID { get; set; }
-        [ForeignKey("BookingModel")]
-        public int BookingID { get; set; }
+        public int Id { get; set; }
+        //[ForeignKey("BookingModel")]
+        public int BookingId { get; set; }
         public DateTime ArrivalDate { get; set; }
-        [StringLength(20, ErrorMessage = "No more than 20 characters")]
+
+        [StringLength(20)]
         public string UpdatedBy { get; set; }
 
-        public virtual BookingModel BookingModel { get; set; }
+        public virtual BookingModel Booking { get; set; }
     }
 }

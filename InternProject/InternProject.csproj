@@ -173,9 +173,12 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BLL\Implements\PurchaseOrderTool\PurchaseOrderRepository.cs" />
+    <Compile Include="BLL\Interface\PurchaseOrderTool\IPurchaseOrderRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrderModelsController.cs" />
     <Compile Include="DAL\DBContext\PODBContext.cs" />
     <Compile Include="DAL\Models\OrderTrack\OrderDetailModel.cs" />
     <Compile Include="DAL\Models\OrderTrack\OrderModel.cs" />
@@ -190,6 +193,10 @@
     <Compile Include="Migrations\201812040454014_Initial.cs" />
     <Compile Include="Migrations\201812040454014_Initial.Designer.cs">
       <DependentUpon>201812040454014_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812040750012_ReviseModel1.cs" />
+    <Compile Include="Migrations\201812040750012_ReviseModel1.Designer.cs">
+      <DependentUpon>201812040750012_ReviseModel1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -258,11 +265,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\OrderModels\Create.cshtml" />
+    <Content Include="Views\OrderModels\Delete.cshtml" />
+    <Content Include="Views\OrderModels\Details.cshtml" />
+    <Content Include="Views\OrderModels\Edit.cshtml" />
+    <Content Include="Views\OrderModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="BLL\PurchaseOrderTool\Controllers\" />
-    <Folder Include="BLL\PurchaseOrderTool\Views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -280,6 +290,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812040454014_Initial.resx">
       <DependentUpon>201812040454014_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812040750012_ReviseModel1.resx">
+      <DependentUpon>201812040750012_ReviseModel1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

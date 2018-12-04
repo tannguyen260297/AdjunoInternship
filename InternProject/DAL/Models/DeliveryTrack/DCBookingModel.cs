@@ -21,7 +21,7 @@ namespace InternProject.DAL.Models.DeliveryTrack
         [StringLength(12)]
         public string BookingRef { get; set; }
 
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime BookingDate { get; set; }
 
         [StringLength(12)]
@@ -33,10 +33,10 @@ namespace InternProject.DAL.Models.DeliveryTrack
         [StringLength(30)]
         public string CreatedBy { get; set; }
 
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Created { get; set; }
 
-        public virtual ICollection<DCBookingDetailModel> DCBookingDetailModels { get; set; }
+        public virtual ICollection<DCBookingDetailModel> DCBookingDetails { get; set; }
 
     }
 }

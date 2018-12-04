@@ -12,7 +12,7 @@ namespace InternProject.DAL.Models.DeliveryTrack
         [Key]
         public int Id { get; set; }
 
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DeliveryDate { get; set; }
 
         [StringLength(12)]

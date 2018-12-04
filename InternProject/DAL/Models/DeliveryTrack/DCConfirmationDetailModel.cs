@@ -35,8 +35,8 @@ namespace InternProject.DAL.Models.DeliveryTrack
 
         //public virtual ManifestModel ManifestModel { get; set; }
 
-        public virtual DCConfirmationModel DCConfirmationModel { get; set; }
+        public virtual DCConfirmationModel DCConfirmation { get; set; }
 
-        public virtual ICollection<DCBookingDetailModel> DCBookingDetailModels { get; set; }
+        public virtual ICollection<DCBookingDetailModel> DCBookingDetails { get; set; }
     }
 }
