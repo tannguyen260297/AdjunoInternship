@@ -1,0 +1,125 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Display And Filter PO</title>
+
+    <script src="~/DataIntern/script/js.js"></script>
+    <script src="~/DataIntern/script/uikit.min.js"></script>
+    <link href="~/DataIntern/css/uikit.min.css" rel="stylesheet" />
+    <link href="~/DataIntern/css/style.css" rel="stylesheet" />
+    <link href="~/DataIntern/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+    <div uk-grid class="divtong">
+        <!-- start menu-left -->
+        <div class="uk-width-1-4@m uk-width-1-4@s uk-width-1-4@l uk-width-1-4@x left">
+            <!-- start menu-left -->
+            <div class="menu-left">
+                <div uk-grid>
+                    <div class="uk-width-4-4@m uk-width-4-4@s uk-width-4-4@l uk-width-4-4@x  left">
+                        <div class="menu-left-header">
+                            <span class="fa fa-home"><p>Adjuno Internship</p></span>
+                        </div> <!-- end menu-left-header -->
+                    </div>
+                </div>
+                <div uk-grid class="welcome">
+                    <div class="uk-width-1-4@m uk-width-1-4@s uk-width-1-4@l uk-width-1-4@x  ">
+                        <span class="fa fa-bus"></span>
+                    </div>
+                    <div class="uk-width-3-4@m uk-width-3-4@s uk-width-3-4@l uk-width-3-4@x  ">
+                        <p>Welcome to Groove</p>
+                    </div>
+                </div>	<!-- end welcome -->
+                <ul uk-accordion class="list-left" ">
+                    <li class="orders-item">
+                        <!-- start orders -->
+                        <div uk-grid class="welcome uk-accordion-title">
+                            <span class="fa fa-phone"><p>Order</p></span>
+                        </div>	<!-- end welcome -->
+                        <div class="uk-accordion-content">
+                            <p>PO Manager</p>
+                            <p>PO Progress</p>
+                        </div>
+                    </li>
+                    <li class="shipment-item">
+                        <!-- start orders -->
+                        <div uk-grid class="welcome uk-accordion-title">
+                            <span class="fa fa-bus"><p>Shipment</p></span>
+
+                        </div>	<!-- end welcome -->
+                        <div class="uk-accordion-content">
+                            <p>PO Manager</p>
+                            <p>PO Progress</p>
+                        </div>
+                    </li>
+                    <li class="delivery-item">
+                        <!-- start orders -->
+                        <div uk-grid class="welcome uk-accordion-title">
+
+                            <span class="fa fa-plane"><p>Delivery</p></span>
+                        </div>	<!-- end welcome -->
+                        <div class="uk-accordion-content">
+                            <p>PO Manager</p>
+                            <p>PO Progress</p>
+                        </div>
+
+                    </li>
+                    <li class="report-item">
+                        <!-- start orders -->
+                        <div uk-grid class="welcome uk-accordion-title">
+                            <span class="fa fa-bus"><p>Report</p></span>
+                        </div>	<!-- end welcome -->
+                        <div class="uk-accordion-content">
+                            <p>PO Manager</p>
+                            <p>PO Progress</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>	<!-- end menu-left -->
+
+        </div>
+
+        <div class="uk-width-3-4@m uk-width-3-4@s uk-width-3-4@l uk-width-3-4@x  content-right">
+            <!-- star header -->
+            <div class="content-header">
+                <span class="fa fa-bars"></span>
+                <div class="uk-inline dropdown-username">
+                    <button class="uk-button uk-button-default" type="button">User Name</button>
+                    <div uk-dropdown="pos: bottom-right">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li>Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </div><!-- end dropdown username -->
+
+            </div>	<!-- end content-header -->
+            <!-- start content -->
+            <div class="content">
+                <div class="filter-createnew">
+                    <input type="text" name="" placeholder="PO Number" width="40%"><button class="uk-button uk-button-danger btnsearch">Search</button>
+                    <button class="uk-button uk-button-primary">New Order<span class="fa fa-plus"></span></button>
+                </div>
+
+                <!-- start table -->
+                @RenderBody()
+                 <!-- end content-table -->
+            </div>
+        </div>
+
+    </div><!-- /uk-grid -->
+
+</body>
+</html>
