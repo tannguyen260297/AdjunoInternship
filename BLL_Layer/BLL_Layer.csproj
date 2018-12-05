@@ -82,9 +82,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="BLL\Implements\PODBContextRepository.cs" />
     <Compile Include="BLL\Implements\PurchaseOrderTool\PurchaseOrderRepository.cs" />
+    <Compile Include="BLL\Interface\IPODBContext.cs" />
     <Compile Include="BLL\Interface\PurchaseOrderTool\IPurchaseOrderRepository.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +93,10 @@
     <ProjectReference Include="..\DAL_Layer\DAL_Layer.csproj">
       <Project>{83a951f3-c694-472a-aac7-98a119b98e6e}</Project>
       <Name>DAL_Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainModel\DomainModel.csproj">
+      <Project>{dfc0f2ad-1e18-4484-bebd-c926cdf6009c}</Project>
+      <Name>DomainModel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
