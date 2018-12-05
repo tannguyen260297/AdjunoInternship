@@ -7,7 +7,7 @@ using DAL_Layer.DAL.Models.OrderTrack;
 
 namespace BLL_Layer.BLL.Interface.PurchaseOrderTool
 {
-    public interface IPurchaseOrderRepository
+    public interface IPurchaseOrderRepository 
     {
         void Add(OrderModel order);
     }
