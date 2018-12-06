@@ -211,7 +211,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\InternCss\font-awesome.css" />
-    <Content Include="Content\InternCss\style.css" />
     <Content Include="Content\InternCss\uikit.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -219,8 +218,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\InternCss\style.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\InternScipt\js.js" />
+    <Content Include="Scripts\InternScipt\less.js" />
+    <Content Include="Scripts\InternScipt\less.min.js" />
     <Content Include="Scripts\InternScipt\uikit.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
