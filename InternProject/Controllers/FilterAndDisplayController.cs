@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using DomainModel.Models;
 
 namespace InternProject.Controllers
 {
-    public class DisplayAndFilterController : Controller
+    public class FilterAndDisplayController : Controller
     {
-        // GET: DisplayAndFilter
-        public ActionResult DisplayAndFilter()
+        // GET: FilterAndDisplay
+        public ActionResult FilterResult()
         {
             return View();
         }
